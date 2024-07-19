@@ -1,38 +1,93 @@
-.App {
+.holdAll {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: contain;
+  background-image: url("./asset/weatherbackground.jpg");
+  flex-direction: column;
+}
+
+.Weather {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 30px;
+
+}
+
+.holdAll2 {
+  background-color: #ffffff30;
+  width: 420px;
+  height: 450px;
+  border: 2px solid white;
+  border-radius: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.holdAll2 form {
+  padding: 20px 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.holdAll2 form input {
+  width: 80%;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+  outline: none;
+  color: gray;
+  font-size: 17px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.holdAll2 form button {
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: #4c81ad;
+  color: #fff766;
+  cursor: pointer;
+}
+.holdSecond h1 {
+  font-size: 30px;
+  margin: 0;
+  padding-top: 15px;
+  color: black;
+}
+
+.holdSecond {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.holdSecond h1 {
+  font-size: 30px;
+  margin: 0;
+  padding-top: 15px;
+  color: black;
+}
+
+.holdSecond div {
+  width: 70%;
+  background-color: #14101075;
+  border: 2px solid white;
+  border-radius: 5px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.holdSecond div h1 {
+  color: white;
+}
+.holdSecond div p {
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 600px) {
+  .holdAll2 {
+    width: 90%;
   }
 }
