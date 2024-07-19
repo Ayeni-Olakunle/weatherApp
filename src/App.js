@@ -59,7 +59,7 @@ function App() {
     setLoading(true);
 
     fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${input},${input},${input}&appid=${key}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${input.trim()},${input.trim()},${input.trim()}&appid=${key}`
     )
       .then((Response) => Response.json())
       .then((data) => {
@@ -92,6 +92,7 @@ function App() {
             <input
               type="text"
               className="input"
+              placeholder="Enter a city"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               required
